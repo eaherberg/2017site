@@ -62,7 +62,7 @@ body {
     color: #FFFFFF;
     height: 100vh;
     width: 100%;
-    background url(asset_path('images/banner_FF9900.jpg')) no-repeat center center fixed; 
+    background-image: url("assets/images/banner_FF9900.jpg") center center fixed; no-repeat center center fixed; 
     background-size: cover;
 }
 
