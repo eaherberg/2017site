@@ -1,1 +1,203 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #FF9900; 
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* the navigation bar */
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    
+}
+
+.site_header {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(35, 47, 62, 0.8);
+    color: #EEEEEE;
+    padding-top: 22px;
+}
+
+.site_header a {
+    color: #EEEEEE;
+    transition: all .25s ease-in-out 0s;
+}
+
+.site_header a:after {
+    content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+
+.site_header a:hover:after {
+    width: 100%;
+	background: #FF9900;
+}
+
+.logo {
+    font-family: verdana;
+    letter-spacing: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logo_container {
+    float: left;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.main_nav {
+    float: right;
+}
+
+.main_nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: courier;
+    font-size: 16px;
+}
+
+.banner {
+    color: #FFFFFF;
+    height: 100vh;
+    width: 100%;
+    background: url("https://raw.githubusercontent.com/eaherberg/eaherberg.github.io/master/assets/images/about_banner.jpg") no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.about_banner_text {
+    text-align: center;
+    height: 80vh;
+    padding-top: 260px;
+    font-family: verdana;
+    font-weight: bold;
+}
+
+.about_banner_text h1 {
+    font-family: courier;
+    font-size: 40px;
+    padding: 0 100px;
+    letter-spacing: -1px;
+}
+
+.highlight {
+    background-color: #000000;
+    background-image: linear-gradient(to left, #232F35 100%, #232F35 100%);
+    opacity: 0.8;
+}
+
+.about {
+    font-family: courier;
+    font-size: 26px;
+    padding-left: 20
+}
+
+.about p {
+    height: auto;
+    width: 600px;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding-top: 60px;
+    font-weight: bold;
+}
+
+.about_main {
+    background-color: #FFFFFF;
+    color: #232F3E;
+    height: 400px;
+    text-align: left;
+}
+
+.about_goals {
+    background-color: #232F3E;
+    color: #FFFFFF;
+    height: 400px;
+    text-align: right;
+}
+
+.about_goals p {
+    float: right;
+}
+
+.about_presentation {
+    Background-color: #EEEEEE;
+    color: #232F3E;
+    height: 400px;
+    text-align: left;
+}
+
+.footer {
+    height: 40px;
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    font-family: verdana;
+    text-decoration: none;
+    font-size: 14px;
+    float: left;
+}
+
+.media {
+    float: right;
+}
+
+.media ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: courier;
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+
+.media_icons img{
+    height: 25px;
+}
+
+.media ul li:hover {
+    opacity: 1; 
+    filter: grayscale(100%);
+}
+
 
