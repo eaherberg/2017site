@@ -29,6 +29,14 @@ body {
 .clearfix { display: block; }
 /* close commented backslash hack */
 
+/* the navigation bar */
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    
+}
+
 .site_header {
     height: 60px;
     width: 100%;
@@ -59,7 +67,7 @@ body {
 }
 
 .logo {
-    font-family: verdana;
+    font-family: sans-serif;
     letter-spacing: 0px;
     font-weight: bold;
     text-transform: uppercase;
@@ -72,8 +80,8 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    width: 100%; 
+    max-width: 1000px;
+    width: 100%;
     margin: auto;
 }
 
@@ -94,6 +102,7 @@ body {
     width: 100%;
     background: url("https://raw.githubusercontent.com/eaherberg/eaherberg.github.io/master/assets/images/banner_FF9900.jpg") no-repeat center center fixed; 
     background-size: cover;
+    padding-top: 70px;
 }
 
 .banner_text {
@@ -117,23 +126,23 @@ body {
     font-size: 40px;
     padding: 0 100px;
     letter-spacing: -1px;
-    float: left;
 }
 
 .highlight {
     background-color: #000000;
-    background-image: linear-gradient(to left, #232F35 0%, #232F35 100%);
+    background-image: linear-gradient(#232F35 100%, #232F35 100%);
     opacity: 0.8;
 }
 
 .footer {
-    height: 60px;
+    padding-top: 20px;
+    height: 40px;
     width: 100%;
-    padding-bottom: 22px;
 }
 
 .copyright {
     font-family: verdana;
+    color: #232F3E;
     text-decoration: none;
     font-size: 14px;
     float: left;
@@ -147,16 +156,17 @@ body {
     display: inline-block;
     margin-left: 20px;
     font-family: courier;
-    opacity: 0.7;
-    filter: alpha(opacity=50);
+    opacity: 0.6;
+    filter: alpha(opacity=50); 
 }
 
 .media_icons img{
     height: 25px;
+    filter: grayscale(100%)
 }
 
 .media ul li:hover {
-    opacity: 1; 
+    opacity: 0.8; 
     filter: grayscale(100%);
 }
 
