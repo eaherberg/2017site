@@ -10,7 +10,7 @@ a {
 }
 
 body {
-    background-color: #FFFFFF; 
+    background-color: #112D32; 
 }
 
 .clearfix:after {
@@ -40,13 +40,14 @@ body {
 .site_header {
     height: 60px;
     width: 100%;
-    background-color: rgba(35, 47, 62, 0.8);
+    background-color: rgba(79, 74, 65, 0.9);
+    box-shadow: 0px 0px 5px #4f4a41;
     color: #EEEEEE;
     padding-top: 22px;
 }
 
 .site_header a {
-    color: #EEEEEE;
+    color: #efefef;
     transition: all .25s ease-in-out 0s;
 }
 
@@ -63,16 +64,17 @@ body {
 
 .site_header a:hover:after {
     width: 100%;
-	background: #FF9900;
+	background: #88BDBC;
 }
 
 .logo {
-    font-family: sans-serif;
+    font-family: arial;
     letter-spacing: 0px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
+    text-shadow: 0px 2px #4f4a41;
 }
 
 .logo_container {
@@ -96,19 +98,21 @@ body {
     font-size: 16px;
 }
 
+/* begin unique page content */
+
 .banner {
     color: #FFFFFF;
     height: 100vh;
     width: 100%;
-    background: url("https://raw.githubusercontent.com/eaherberg/eaherberg.github.io/master/assets/images/about_banner.jpg") no-repeat center center fixed; 
+    background: url(https://raw.githubusercontent.com/eaherberg/eaherberg.github.io/master/assets/images/banner_about.jpg) no-repeat center center fixed; 
     background-size: cover;
 }
 
 .about_banner_text {
     text-align: center;
     height: 80vh;
-    padding-top: 260px;
-    font-family: verdana;
+    padding-top: 150px;
+    font-family: sans-serif;
     font-weight: bold;
 }
 
@@ -121,14 +125,14 @@ body {
 
 .highlight {
     background-color: #000000;
-    background-image: linear-gradient(to left, #232F35 100%, #232F35 100%);
+    background-image: linear-gradient(to left, #4f4a41 100%, #4f4a41 100%);
     opacity: 0.8;
 }
 
 .about {
     font-family: courier;
     font-size: 26px;
-    padding-left: 20
+    padding-left: 20;
 }
 
 .about p {
@@ -165,15 +169,17 @@ body {
     text-align: left;
 }
 
+/* end unique page content */
+
 .footer {
+    padding-top: 20px;
     height: 40px;
     width: 100%;
-    padding-top: 20px;
-    margin-bottom: 20px;
 }
 
 .copyright {
     font-family: verdana;
+    color: #112D32;
     text-decoration: none;
     font-size: 14px;
     float: left;
@@ -187,17 +193,17 @@ body {
     display: inline-block;
     margin-left: 20px;
     font-family: courier;
-    opacity: 0.7;
-    filter: alpha(opacity=50);
+    opacity: 0.6;
+    filter: alpha(opacity=50); 
 }
 
 .media_icons img{
     height: 25px;
+    filter: grayscale(100%)
 }
 
 .media ul li:hover {
-    opacity: 1; 
+    opacity: 0.8; 
     filter: grayscale(100%);
 }
-
 
