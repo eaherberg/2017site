@@ -133,9 +133,9 @@ body {
 }
 
 .highlight {
-    background-color: #FFFFFF;
-    background-image: linear-gradient(#4F4A41 100%, #4F4A41 100%);
-    opacity: 0.8;
+    background-color: #000000;
+    background-image: linear-gradient(to left, #4f4a41 100%, #4f4a41 100%);
+    background: rgba(79, 64, 65, 0.8);
 }
 
 /* end unique page content */
