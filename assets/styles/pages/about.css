@@ -10,7 +10,7 @@ a {
 }
 
 body {
-    background-color: #112D32; 
+    background-color: #efefef; 
 }
 
 .clearfix:after {
@@ -42,7 +42,7 @@ body {
     width: 100%;
     background-color: rgba(79, 74, 65, 0.9);
     box-shadow: 0px 0px 5px #4f4a41;
-    color: #EEEEEE;
+    color: #efefef;
     padding-top: 22px;
 }
 
@@ -101,8 +101,8 @@ body {
 /* begin unique page content */
 
 .banner {
-    color: #FFFFFF;
-    height: 100vh;
+    color: #efefef;
+    height: 70vh;
     width: 100%;
     background: url(https://raw.githubusercontent.com/eaherberg/eaherberg.github.io/master/assets/images/banner_about.jpg) no-repeat center center fixed; 
     background-size: cover;
@@ -111,8 +111,8 @@ body {
 .about_banner_text {
     text-align: center;
     height: 80vh;
-    padding-top: 150px;
-    font-family: sans-serif;
+    padding-top: 230px;
+    font-family: monospace;
     font-weight: bold;
 }
 
@@ -126,53 +126,81 @@ body {
 .highlight {
     background-color: #000000;
     background-image: linear-gradient(to left, #4f4a41 100%, #4f4a41 100%);
-    opacity: 0.8;
+    background: rgba(79, 64, 65, 0.8);
 }
 
 .about {
     font-family: courier;
-    font-size: 26px;
-    padding-left: 20;
+    font-size: 18px;
+}
+
+.about h1{
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.about a{
+    color: #254E58;
+    font-family: monospace;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .about p {
     height: auto;
-    width: 600px;
-    margin-right: 100px;
-    margin-left: 100px;
-    padding-top: 60px;
-    font-weight: bold;
+    width: auto;
+    margin-right: 200px;
+    margin-left: 200px;
+    line-height: 1.25;
 }
 
 .about_main {
-    background-color: #FFFFFF;
+    background-color: #efefef;
     color: #232F3E;
-    height: 400px;
-    text-align: left;
+    height: auto;
+    padding-bottom: 40px;
 }
 
-.about_goals {
-    background-color: #232F3E;
-    color: #FFFFFF;
-    height: 400px;
-    text-align: right;
+.gallery {
+    margin-left: 220px;
+    margin-right: 220px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+    position: static;
 }
 
-.about_goals p {
-    float: right;
+.gallery img {
+    border: 1px solid #88BDBC;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
 }
 
-.about_presentation {
-    Background-color: #EEEEEE;
+.about_site {
+    background-color: #efefef;
     color: #232F3E;
-    height: 400px;
-    text-align: left;
+    height: auto;
+    padding-top: 50px;
+}
+
+.gallery_2 img {
+    height: 260px;
+    width: auto;
+    display: block;
+    margin: auto;
+    border: 1px solid #88BDBC;
+    box-shadow: 0 4px 8px 0 rgba(p, 0, 0, 0.2);
+    margin-top: 40px;
 }
 
 /* end unique page content */
 
 .footer {
-    padding-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     height: 40px;
     width: 100%;
 }

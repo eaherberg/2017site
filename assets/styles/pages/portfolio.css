@@ -1,1 +1,339 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #efefef; 
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* the navigation bar */
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    
+}
+
+.site_header {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(79, 74, 65, 0.9);
+    box-shadow: 0px 0px 5px #4f4a41;
+    color: #efefef;
+    padding-top: 22px;
+}
+
+.site_header a {
+    color: #efefef;
+    transition: all .25s ease-in-out 0s;
+}
+
+.site_header a:after {
+    content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+
+.site_header a:hover:after {
+    width: 100%;
+	background: #88BDBC;
+}
+
+.logo {
+    font-family: arial;
+    letter-spacing: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: 0px 2px #4f4a41;
+}
+
+.logo_container {
+    float: left;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.main_nav {
+    float: right;
+}
+
+.main_nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: courier;
+    font-size: 16px;
+}
+
+/* begin unique page content */
+
+.banner {
+    color: #efefef;
+    height: 70vh;
+    width: 100%;
+    background: url(https://raw.githubusercontent.com/eaherberg/eaherberg.github.io/master/assets/images/banner_portfolio.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.port_banner_text {
+    text-align: center;
+    height: 80vh;
+    padding-top: 230px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.port_banner_text h1 {
+    font-family: courier;
+    font-size: 40px;
+    padding: 0 100px;
+    letter-spacing: -1px;
+}
+
+.highlight {
+    background-color: #000000;
+    background-image: linear-gradient(to left, #4f4a41 100%, #4f4a41 100%);
+    background: rgba(79, 64, 65, 0.8);
+}
+
+.port {
+    font-family: courier;
+    font-size: 18px;
+    background-color: #efefef;
+}
+
+.port h1{
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 60px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.port_main a {
+    color: #254E58;
+    font-family: monospace;
+    text-decoration: underline;
+    font-weight: bold;
+    line-height: 1.25px;
+}
+
+.port_main p {
+    height: auto;
+    width: auto;
+    margin-right: 200px;
+    margin-left: 200px;
+    line-height: 1.25;
+}
+
+.port_main {
+    background-color: #efefef;
+    color: #232F3E;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.why_aws {
+    font-family: courier;
+    font-size: 18px;
+    background-color: #efefef;
+    color: #232F3E;
+}
+
+.why_aws h1{
+    font-family: courier;
+    font-size: 40px;
+    color: #efefef; 
+    padding: 0px;
+
+}
+
+.why_aws p {
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-right: 250px;
+    margin-left: 250px;
+    line-height: 1.25;
+}
+
+.why_aws img{
+    height: 462px;
+    width: auto;
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.storyline_vid {
+    display: block;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.norsk_vid {
+    font-family: courier;
+    font-size: 18px;
+    background-color: #efefef;
+    color: #232F3E;
+}
+
+.norsk_vid h1{
+    font-family: courier;
+    font-size: 40px;
+    color: #efefef; 
+    padding: 0px;
+
+}
+
+.norsk_vid p {
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-right: 250px;
+    margin-left: 250px;
+    line-height: 1.25;
+    padding-bottom: 10px;
+}
+.tools {
+    font-family: courier;
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+    background-color: #efefef;
+    color: #88BDBC;
+} 
+
+.video {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    border: 2px;
+    border-color: #88bdbc;
+}
+
+.writing {
+    font-family: courier;
+    font-size: 18px;
+    background-color: #efefef;
+    color: #232F3E;
+    padding-top: 40px;
+    
+}
+
+.writing h1{
+    font-family: courier;
+    font-size: 40px;
+    color: #efefef; 
+    padding: 0px;
+
+}
+
+.writing p {
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-right: 250px;
+    margin-left: 250px;
+    line-height: 1.25;
+    padding-bottom: 10px;
+}
+
+.writing img{
+    display: block;
+    margin: auto;
+    border: 1px solid #88BDBC;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+.writing img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.gallery {
+    margin-left: 220px;
+    margin-right: 220px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+    position: static;
+}
+
+/* end unique page content */
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 60px;
+    width: 100%;
+    background-color: #efefef;
+}
+
+.copyright {
+    font-family: verdana;
+    color: #112D32;
+    text-decoration: none;
+    font-size: 14px;
+    float: left;
+}
+
+.media {
+    float: right;
+}
+
+.media ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: courier;
+    opacity: 0.6;
+    filter: alpha(opacity=50); 
+}
+
+.media_icons img{
+    height: 25px;
+    filter: grayscale(100%)
+}
+
+.media ul li:hover {
+    opacity: 0.8; 
+    filter: grayscale(100%);
+}
 
