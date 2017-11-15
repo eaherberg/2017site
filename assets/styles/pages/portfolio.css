@@ -7,6 +7,7 @@ html {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 body {
@@ -289,8 +290,8 @@ body {
 }
 
 .gallery {
-    margin-left: 220px;
-    margin-right: 220px;
+    margin-left: 260px;
+    margin-right: 260px;
     display: flex;
     justify-content: space-between;
     vertical-align: top;
