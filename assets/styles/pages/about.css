@@ -140,6 +140,7 @@ body {
 .about {
     font-family: courier new;
     font-size: 18px;
+    text-align: center;
 }
 
 .about h1{
