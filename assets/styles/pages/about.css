@@ -10,6 +10,12 @@ a {
     cursor: pointer;
 }
 
+p {
+	text-align: center;
+	dispaly: static;
+	max-width: auto;
+}
+
 body {
     background-color: #efefef; 
 }
