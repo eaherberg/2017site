@@ -11,9 +11,9 @@ a {
 }
 
 p {
-	text-align: center;
-	dispaly: static;
-	max-width: auto;
+	position: relative; 
+	width: 960px;
+  	margin: 0 auto; 
 }
 
 body {
