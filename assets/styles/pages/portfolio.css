@@ -14,6 +14,10 @@ body {
     background-color: #efefef; 
 }
 
+p {
+    max-width: 1200px;
+}
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -47,12 +51,12 @@ body {
     padding-top: 22px;
 }
 
-.site_header a {
+.main_nav a {
     color: #efefef;
     transition: all .25s ease-in-out 0s;
 }
 
-.site_header a:after {
+.main_nav a:after {
     content: '';
 	display: block;
 	margin: auto;
@@ -69,7 +73,7 @@ body {
 }
 
 .logo {
-    font-family: arial;
+    font-family: Lucida Console;
     letter-spacing: 0px;
     font-weight: bold;
     text-transform: uppercase;
@@ -80,6 +84,13 @@ body {
 
 .logo_container {
     float: left;
+}
+
+.logo img {
+    height: 42px;
+    width: auto;
+    margin-top: -11px;
+    opacity: 0.9;
 }
 
 .container {
@@ -95,7 +106,7 @@ body {
 .main_nav ul li {
     display: inline-block;
     margin-left: 20px;
-    font-family: courier;
+    font-family: courier new;
     font-size: 16px;
 }
 
@@ -113,12 +124,12 @@ body {
     text-align: center;
     height: 80vh;
     padding-top: 230px;
-    font-family: monospace;
+    font-family: courier new;
     font-weight: bold;
 }
 
 .port_banner_text h1 {
-    font-family: courier;
+    font-family: courier new;
     font-size: 40px;
     padding: 0 100px;
     letter-spacing: -1px;
@@ -131,13 +142,13 @@ body {
 }
 
 .port {
-    font-family: courier;
+    font-family: courier new;
     font-size: 18px;
     background-color: #efefef;
 }
 
 .port h1{
-    font-family: monospace;
+    font-family: courier new;
     font-size: 24px;
     font-weight: bold;
     text-align: left;
@@ -148,7 +159,7 @@ body {
 
 .port_main a {
     color: #254E58;
-    font-family: monospace;
+    font-family: courier new;
     text-decoration: underline;
     font-weight: bold;
     line-height: 1.25px;
@@ -170,14 +181,14 @@ body {
 }
 
 .why_aws {
-    font-family: courier;
+    font-family: courier new;
     font-size: 18px;
     background-color: #efefef;
     color: #232F3E;
 }
 
 .why_aws h1{
-    font-family: courier;
+    font-family: courier new;
     font-size: 40px;
     color: #efefef; 
     padding: 0px;
@@ -208,14 +219,19 @@ body {
 }
 
 .norsk_vid {
-    font-family: courier;
+    font-family: courier new;
     font-size: 18px;
     background-color: #efefef;
     color: #232F3E;
 }
 
+.fun_fact {
+    font-size: 12px;
+    font-style: italic;
+}
+
 .norsk_vid h1{
-    font-family: courier;
+    font-family: courier new;
     font-size: 40px;
     color: #efefef; 
     padding: 0px;
@@ -232,7 +248,7 @@ body {
     padding-bottom: 10px;
 }
 .tools {
-    font-family: courier;
+    font-family: courier new;
     font-size: 12px;
     text-align: center;
     font-style: italic;
@@ -249,16 +265,17 @@ body {
 }
 
 .writing {
-    font-family: courier;
+    font-family: courier new;
     font-size: 18px;
     background-color: #efefef;
     color: #232F3E;
     padding-top: 40px;
+    max-width: 1200px;
     
 }
 
 .writing h1{
-    font-family: courier;
+    font-family: courier new;
     font-size: 40px;
     color: #efefef; 
     padding: 0px;
@@ -298,6 +315,11 @@ body {
     position: static;
 }
 
+.gallery a {
+    target-name:new;
+    target-new:tab;
+}
+
 /* end unique page content */
 
 .footer {
@@ -309,7 +331,7 @@ body {
 }
 
 .copyright {
-    font-family: verdana;
+    font-family: Lucida Console;
     color: #112D32;
     text-decoration: none;
     font-size: 14px;

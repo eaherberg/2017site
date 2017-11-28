@@ -1,1 +1,379 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: #efefef; 
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* the navigation bar */
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    
+}
+
+.site_header {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(79, 74, 65, 0.9);
+    box-shadow: 0px 0px 5px #4f4a41;
+    color: #efefef;
+    padding-top: 22px;
+}
+
+.main_nav a {
+    color: #efefef;
+    transition: all .25s ease-in-out 0s;
+}
+
+.main_nav a:after {
+    content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+
+.site_header a:hover:after {
+    width: 100%;
+	background: #88BDBC;
+}
+
+.logo {
+    font-family: Lucida Console;
+    letter-spacing: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: 0px 2px #4f4a41;
+}
+
+.logo_container {
+    float: left;
+}
+
+.logo img {
+    height: 42px;
+    width: auto;
+    margin-top: -11px;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.main_nav {
+    float: right;
+}
+
+.main_nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: courier new;
+    font-size: 16px;
+}
+
+/* begin unique page content */
+
+.banner {
+    color: #efefef;
+    height: 65vh;
+    width: 100%;
+    background: url(https://raw.githubusercontent.com/eaherberg/eaherberg.github.io/master/assets/images/banner_resume.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.res_banner_text {
+    text-align: center;
+    height: 80vh;
+    padding-top: 230px;
+    font-family: courier new; 
+    font-weight: bold;
+}
+
+.res_banner_text h1 {
+    font-family: courier new;
+    font-size: 40px;
+    padding: 0 100px;
+    letter-spacing: -1px;
+}
+
+.highlight {
+    background-color: #000000;
+    background-image: linear-gradient(to left, #4f4a41 100%, #4f4a41 100%);
+    background: rgba(79, 64, 65, 0.8);
+}
+
+.resume {
+    font-family: courier new;
+    font-size: 18px;
+    color: #232F3E;
+}
+
+.resume h1{
+    font-family: courier new;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.resume h1 a {
+    text-decoration: none;
+    color: #232F3E;
+}
+
+.resume a{
+    color: #254E58;
+    font-family: courier new;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.resume p {
+    height: auto;
+    width: auto;
+    margin-right: 200px;
+    margin-left: 200px;
+    line-height: 1.25;
+}
+
+.list ul {
+    display: list-item;
+    margin-left: 220px;
+    margin-right: 220px;
+    max-width: 1200px;
+}
+
+.anecdote {
+    font-size: 8px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.list ul li {
+    font-size: 16px;
+    margin-left: 10px;
+    list-style-type: disc;
+    line-height: 1.25;
+ }
+
+.experience {
+    max-width: 1200px;
+}
+
+.experience h1 {
+    font-family: courier new;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-decoration: underline;
+}
+
+.experience h2 {
+    font-family: courier new;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.eperience p {
+    height: auto;
+    width: auto;
+    margin-right: 200px;
+    margin-left: 200px;
+    line-height: 1.25;
+    font-size: 16px;
+}
+
+.experience ul {
+    display: list-item;
+    margin-left: 220px;
+    margin-right: 220px;
+    max-width: 1200px;
+}
+
+.experience ul li {
+    font-size: 16px;
+    margin-left: 10px;
+    list-style-type: disc;
+    line-height: 1.25;
+ }
+
+.position {
+    font-style: italic;
+}
+
+.education {
+    max-width: 1200px;
+}
+
+.education h1 {
+    font-family: courier new;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-decoration: underline;
+}
+
+.education h2 {
+    font-family: courier new;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.education p {
+    height: auto;
+    width: auto;
+    margin-right: 200px;
+    margin-left: 200px;
+    line-height: 1.25;
+    font-size: 16px;
+}
+
+.education ul {
+    display: list-item;
+    margin-left: 220px;
+    margin-right: 220px;
+    max-width: 1200px;
+}
+
+.education ul li {
+    font-size: 16px;
+    margin-left: 10px;
+    list-style-type: disc;
+    line-height: 1.25;
+ }
+
+.position {
+    font-style: italic;
+}
+
+.extra {
+    max-width: 1200px;
+}
+
+.extra h1 {
+    font-family: courier new;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-decoration: underline;
+}
+
+.extra h2 {
+    font-family: courier new;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.extra p {
+    height: auto;
+    width: auto;
+    margin-right: 200px;
+    margin-left: 200px;
+    line-height: 1.25;
+    font-size: 16px;
+}
+
+.extra ul {
+    display: list-item;
+    margin-left: 220px;
+    margin-right: 220px;
+    max-width: 1200px;
+}
+
+.extra ul li {
+    font-size: 16px;
+    margin-left: 10px;
+    list-style-type: disc;
+    line-height: 1.25;
+ }
+
+/* end unique page content */
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 40px;
+    width: 100%;
+}
+
+.copyright {
+    font-family: Lucida Console;
+    color: #112D32;
+    text-decoration: none;
+    font-size: 14px;
+    float: left;
+}
+
+.media {
+    float: right;
+}
+
+.media ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: courier new;
+    opacity: 0.6;
+    filter: alpha(opacity=50); 
+}
+
+.media_icons img{
+    height: 25px;
+    filter: grayscale(100%)
+}
+
+.media ul li:hover {
+    opacity: 0.8; 
+    filter: grayscale(100%);
+}
 
