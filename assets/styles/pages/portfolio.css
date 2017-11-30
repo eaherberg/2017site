@@ -142,9 +142,11 @@ p {
 }
 
 .port {
+    background-color: #efefef;
     font-family: courier new;
     font-size: 18px;
-    background-color: #efefef;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .port h1{
