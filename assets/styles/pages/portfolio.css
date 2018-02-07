@@ -182,14 +182,14 @@ p {
     padding-bottom: 40px;
 }
 
-.why_aws {
+.id {
     font-family: courier new;
     font-size: 18px;
     background-color: #efefef;
     color: #232F3E;
 }
 
-.why_aws h1{
+.id h1{
     font-family: courier new;
     font-size: 40px;
     color: #efefef; 
@@ -197,7 +197,16 @@ p {
 
 }
 
-.why_aws p {
+.id h2{
+    font-family: courier new;
+    font-size: 30px;
+    color: #232F3E; 
+    padding: 0px;
+    text-align: center;
+    
+}
+
+.id p {
     height: auto;
     width: auto;
     text-align: center;
@@ -206,7 +215,7 @@ p {
     line-height: 1.25;
 }
 
-.why_aws img{
+.id img{
     height: 462px;
     width: auto;
     display: block;
